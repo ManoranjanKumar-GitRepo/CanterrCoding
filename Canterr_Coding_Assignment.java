@@ -1,7 +1,7 @@
 
 import java.io.*;
 import java.util.*;
-//import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 
 /*
  * To execute Java, please define "static void main" on a class
@@ -85,8 +85,8 @@ public static void twoSum(int[] nums, int target){
             if (map.containsKey(target - nums[i]))
             {
               // Print index of Elements that adds upto target
-                //int index = ArrayUtils.indexOf(nums, firstValue);
-                //System.out.println("Index of Pair found (" + index +", "+ i+ ")");
+                int index = ArrayUtils.indexOf(nums, firstValue);
+                System.out.println("Index of Pair found (" + index +", "+ i+ ")");
 
               // Print Elements that adds upto target
                 System.out.printf("Value of Pair found (%d, %d)",
